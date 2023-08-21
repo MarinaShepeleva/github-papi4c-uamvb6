@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/_head.htm',{ "title":"Главная" })
+
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+        <section class="page__section topContent">
+          <div class="topContent__slider">
+            <h1>Новые поступления в этом сезоне</h1>
+            <p>
+              Утонченные сочетания и бархатные оттенки - вот то, что вы искали в
+              этом сезоне. Время исследовать.
+            </p>
+            <a href="#" class="topContent__slider--button buttonOpen"
+              >Открыть магазин</a
+            >
+          </div>
+          <div class="topContent__images">
+            <img class="topContent__images--photo1" src="img/topContent_photo1" />
+            <img class="topContent__images--photo2" src="img/topContent_photo2" />
+            <img class="topContent__images--photo3" src="img/topContent_photo3" />
+          </div>
+        </section>
+
+        <section class="page__section newCollection">
+          <h2>Новая коллекция</h2>
+          <div class="newCollection__cardsProducts productsCards">
+            <article class="productsCards__productcard productCard">
+              <div class="productCard__image image-ibg">
+                <a href="#"
+                  ><img
+                    src="/img/catalog/catalog_photo3.jpg"
+                    alt="Футболка USA"
+                /></a>
+              </div>
+              <div class="productCard__content">
+                <p class="productCard__title">Футболка USA</p>
+                <p class="productCard__price">
+                  <span class="productCard__price--common">$229</span>
+                  <span class="productCard__price--discount">$129</span>
+                </p>
+              </div>
+            </article>
+          </div>
+          <a href="#" class="productsCards__button buttonOpen"
+            >Открыть магазин</a
+          >
+        </section>
+
+        <section class="page__section importantToUs">
+          <h2>Что для нас важно</h2>
+          <div class="importantToUs__wrapper">
+            <article class="importantToUs__card">
+              <img class="importantToUs__card--image" src="#" />
+              <h3 class="importantToUs__card--title">Качество</h3>
+              <p class="importantToUs__card--description">
+                Наши профессионалы работают на лучшем оборудовании для пошива
+                одежды беспрецедентного качества
+              </p>
+            </article>
+            <article class="importantToUs__card">
+              <img class="importantToUs__card--image" src="#" />
+              <h3 class="importantToUs__card--title">Скорость</h3>
+              <p class="importantToUs__card--description">
+                Благодаря отлаженной системе в Womazing мы можем отшивать до
+                20-ти единиц продукции в наших собственных цехах
+              </p>
+            </article>
+            <article class="importantToUs__card">
+              <img class="importantToUs__card--image" src="#" />
+              <h3 class="importantToUs__card--title">Ответственность</h3>
+              <p class="importantToUs__card--description">
+                Мы заботимся о людях и планете. Безотходное производство и
+                комфортные условия труда - все это Womazing
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="page__section dreamTeam">
+          <h2>Команда мечты Womazing</h2>
+          <div class="dreamTeam__wrapper">
+            <div class="dreamTeam__slider">
+              <img class="dreamTeam__slider--image" src="#" />
+              <img class="dreamTeam__slider--image" src="#" />
+              <img class="dreamTeam__slider--image" src="#" />
+            </div>
+            <div class="dreamTeam__content">
+              <h3 class="dreamTeam__title">Для каждой</h3>
+              <p class="dreamTeam__text">
+                Каждая девушка уникальна. Однако, мы схожи в миллионе мелочей.
+              </p>
+              <p class="dreamTeam__text">
+                Womazing ищет эти мелочи и создает прекрасные вещи, которые
+                выгодно подчеркивают достоинства каждой девушки.
+              </p>
+              <a href="#">Подробнее о бренде</a>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+  </body>
+</html>

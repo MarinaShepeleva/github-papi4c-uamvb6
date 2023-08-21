@@ -1,0 +1,52 @@
+// Заголовки, общие БЄМ блоки и проче...
+
+// заголовки на страницах
+.page__section {
+  h1 {
+    font-size: em(55);
+    line-height: 110%;
+    letter-spacing: em(1.1px);
+  }
+  h2 {
+    font-size: em(40);
+    line-height: 110%;
+    letter-spacing: em(0.8);
+  }
+}
+
+// Кнопка "Открыть магазин"
+.buttonOpen {
+  color: #fff;
+  font-size: em(17);
+  font-weight: 400;
+  line-height: 138.9%;
+  letter-spacing: em(0.34);
+  background-color: #6e9c9f;
+  padding: rem(22) rem(50);
+}
+
+// карточка товара
+.productCard {
+  width: rem(350);
+  height: rem(558);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  &__img {
+    width: rem(350);
+    height: rem(478);
+  }
+  &__title {
+    font-size: em(20);
+    letter-spacing: em(0.4);
+  }
+  &__price {
+    font-size: em(15);
+    color: #998e78;
+    
+    &--discount {
+      text-decoration-line: strikethrough;
+    }
+  }
+}
